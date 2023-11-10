@@ -119,6 +119,11 @@ input {
   background-color: #f4f4fd;
   padding: 96px 0;
 }
+.list-social-links {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+}
 
 .team-list {
   display: flex;
@@ -184,12 +189,6 @@ input {
 .team-icon {
   fill: #f4f4fd;
   background-color: #404bbf;
-}
-
-.list-social-links {
-  display: flex;
-  gap: 24px;
-  justify-content: center;
 }
 
 /* ======================================== /team mobilet ========================================= */
@@ -334,85 +333,86 @@ input {
   .advantages {
     padding: 120px 0;
   }
-}
-/* ======================================== /advantages desktop ========================================= */
 
-/* ======================================== team desktop ========================================= */
+  /* ======================================== /advantages desktop ========================================= */
 
-.team {
-  background-color: #f4f4fd;
-  padding: 120px 0;
-}
+  /* ======================================== team desktop ========================================= */
 
-.team-list {
-  display: flex;
-  gap: 24px;
-}
-.team-peopel {
-  border-radius: 0px 0px 4px 4px;
-  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
-    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
-    0px 1px 6px 0px rgba(46, 47, 66, 0.08);
-}
+  .team {
+    background-color: #f4f4fd;
+    padding: 120px 0;
+  }
 
-.team-list-item {
-  padding: 32px 0;
-  background-color: #ffffff;
-}
+  .team-list {
+    display: flex;
+    gap: 24px;
+  }
+  .team-peopel {
+    border-radius: 0px 0px 4px 4px;
+    box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
+      0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+      0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+  }
 
-.list-social-links {
-  display: flex;
-  gap: 24px;
-  justify-content: center;
-}
+  .team-list-item {
+    padding: 32px 0;
+    background-color: #ffffff;
+  }
 
-.team-links {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  background-color: #4d5ae5;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+  .list-social-links {
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+  }
 
-.team-icon {
-  fill: #f4f4fd;
-}
+  .team-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #4d5ae5;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
 
-.team-links:hover,
-.team-links:focus {
-  background-color: #404bbf;
-}
+  .team-icon {
+    fill: #f4f4fd;
+  }
 
-.team-title {
-  color: #2e2f42;
-  text-align: center;
-  font-size: 36px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 1.11;
-  text-transform: capitalize;
-  letter-spacing: 0.72px;
-  margin-bottom: 72px;
-}
+  .team-links:hover,
+  .team-links:focus {
+    background-color: #404bbf;
+  }
 
-.team-subtitle {
-  color: #2e2f42;
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 1.2;
-  letter-spacing: 0.4px;
-  text-align: center;
-  margin-bottom: 8px;
-}
+  .team-title {
+    color: #2e2f42;
+    text-align: center;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.11;
+    text-transform: capitalize;
+    letter-spacing: 0.72px;
+    margin-bottom: 72px;
+  }
 
-.team-text {
-  line-height: 1.5;
-  letter-spacing: 0.32px;
-  text-align: center;
-  margin-bottom: 8px;
+  .team-subtitle {
+    color: #2e2f42;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: 0.4px;
+    text-align: center;
+    margin-bottom: 8px;
+  }
+
+  .team-text {
+    line-height: 1.5;
+    letter-spacing: 0.32px;
+    text-align: center;
+    margin-bottom: 8px;
+  }
+  /* ======================================== /team desktop ========================================= */
 }
-/* ======================================== /team desktop ========================================= */
