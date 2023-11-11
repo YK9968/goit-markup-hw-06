@@ -51,6 +51,64 @@ input {
 /* ======================================== /header mobile ========================================= */
 
 /* ======================================== hero mobile ========================================= */
+.hero {
+  padding: 72px 0;
+  background-color: #2e2f42;
+  text-align: center;
+}
+
+.back-img {
+  max-width: 1440px;
+  margin: 0 auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/mobile-hero.jpg);
+}
+@media screen and (min-resolution: 192dpi) and (max-width: 767px),
+  screen and (min-resolution: 2dppx) and (max-width: 767px),
+  screen and (min-device-pixel-ratio: 2) and (max-width: 767px) {
+  .back-img {
+    max-width: 1440px;
+    margin: 0 auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: linear-gradient(
+        to bottom,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/mobile-hero@2x.jpg);
+  }
+}
+
+.hero-button {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  color: #ffffff;
+  background-color: #4d5ae5;
+  letter-spacing: 0.64px;
+  font-family: 'Roboto', sans-serif;
+  display: inline-block;
+  padding: 16px 32px;
+  border-radius: 4px;
+  min-width: 169px;
+  height: 56px;
+  border: none;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.hero-button:hover,
+.hero-button:focus {
+  background-color: #404bbf;
+}
 
 /* ======================================== /hero mobile ========================================= */
 
@@ -375,8 +433,21 @@ input::placeholder {
     margin: 0 auto;
   }
 }
-/* --------------------------------- foter mobile max ---------------------------------------- */
+/* --------------------------------- mobile max ---------------------------------------- */
 @media screen and (max-width: 767px) {
+  .hero-main-title {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.11;
+    color: #ffffff;
+    letter-spacing: 0.02em;
+    max-width: 224px;
+    margin: 0 auto;
+    margin-bottom: 72px;
+    text-transform: capitalize;
+    text-align: center;
+  }
+
   .footer-text {
     line-height: 1.5;
     letter-spacing: 0.32px;
@@ -425,7 +496,7 @@ input::placeholder {
     justify-content: center;
     margin-bottom: 72px;
   }
-  /* --------------------------------- /foter mobile max---------------------------------------- */
+  /* --------------------------------- /mobile max---------------------------------------- */
 }
 
 @media screen and (min-width: 768px) {
@@ -438,6 +509,36 @@ input::placeholder {
   /* ======================================== /header tablet ========================================= */
 
   /* ======================================== hero tablet ========================================= */
+  .hero {
+    padding: 112px 0;
+    background-color: #2e2f42;
+    text-align: center;
+  }
+
+  .back-img {
+    max-width: 1440px;
+    margin: 0 auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: linear-gradient(
+        to bottom,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/tablet-hero.jpg);
+  }
+  .hero-main-title {
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 1.07;
+    color: #ffffff;
+    text-align: center;
+    letter-spacing: 1.12px;
+    max-width: 496px;
+    margin: 0 auto;
+    margin-bottom: 36px;
+  }
 
   /* ======================================== /hero tablet ========================================= */
   /* ======================================== advantages tablet ========================================= */
@@ -540,10 +641,29 @@ input::placeholder {
     display: flex;
     gap: 16px;
   }
-  
+
   /* ======================================== /footer tablet ========================================= */
 }
-/* ---------------------------------- foter min-max tablet----------------------------------- */
+/* +++++++++++++++++++++++++++++++++++++++++ BG TABLET+++++++++++++++++++++++++++++++++++ */
+@media screen and (min-resolution: 192dpi) and (min-width: 768px),
+  screen and (min-resolution: 2dppx) and (min-width: 768px),
+  screen and (min-device-pixel-ratio: 2) and (min-width: 768px) {
+  .back-img {
+    max-width: 1440px;
+    margin: 0 auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: linear-gradient(
+        to bottom,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/tablet-hero@2x.jpg);
+  }
+}
+/* +++++++++++++++++++++++++++++++++++++++++ BG TABLET+++++++++++++++++++++++++++++++++++ */
+/* ---------------------------------- min-max tablet----------------------------------- */
 @media screen and (min-width: 768px) and (max-width: 1157px) {
   .footer-item {
     display: flex;
@@ -562,7 +682,7 @@ input::placeholder {
     text-align: start;
   }
 }
-/* ---------------------------------- /foter min-max tablet----------------------------------- */
+/* ---------------------------------- /min-max tablet----------------------------------- */
 
 @media screen and (min-width: 1158px) {
   .container {
@@ -575,6 +695,36 @@ input::placeholder {
   /* ======================================== /header desktop ========================================= */
 
   /* ======================================== hero desktop ========================================= */
+  .hero {
+    padding: 188px 0;
+    background-color: #2e2f42;
+    text-align: center;
+  }
+
+  .back-img {
+    max-width: 1440px;
+    margin: 0 auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: linear-gradient(
+        to bottom,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/desk-hero.jpg);
+  }
+  .hero-main-title {
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 1.07;
+    color: #ffffff;
+    text-align: center;
+    letter-spacing: 1.12px;
+    max-width: 496px;
+    margin: 0 auto;
+    margin-bottom: 48px;
+  }
 
   /* ======================================== /hero desktop ========================================= */
   /* ======================================== advantages desktop ========================================= */
@@ -859,3 +1009,22 @@ input::placeholder {
   }
   /* ======================================== /footer desktop ========================================= */
 }
+/* +++++++++++++++++++++++++++++++++++++++++ BG DESK +++++++++++++++++++++++++++++++++++ */
+@media screen and (min-resolution: 192dpi) and (min-width: 1158px),
+  screen and (min-resolution: 2dppx) and (min-width: 1158px),
+  screen and (min-device-pixel-ratio: 2) and (min-width: 1158px) {
+  .back-img {
+    max-width: 1440px;
+    margin: 0 auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: linear-gradient(
+        to bottom,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/desk-hero@2x.jpg);
+  }
+}
+/* +++++++++++++++++++++++++++++++++++++++++ /BG DESK +++++++++++++++++++++++++++++++++++ */
