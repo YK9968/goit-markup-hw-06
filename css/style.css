@@ -273,11 +273,159 @@ input {
 }
 
 /* ======================================== /portfolio mobile ========================================= */
+/* ======================================== footer mobile ========================================= */
+
+.footer {
+  background-color: #2e2f42;
+  padding-top: 97.5px;
+  padding-bottom: 96px;
+}
+.footer-logo {
+  font-family: 'Raleway', sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: #4d5ae5;
+  line-height: 1.17;
+  text-decoration: none;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-bottom: 17.5px;
+}
+.footer-logo-span {
+  font-family: 'Raleway', sans-serif;
+  color: #f4f4fd;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.7;
+  text-decoration: none;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.link-footer {
+  display: inline-block;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #4d5ae5;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-links:hover,
+.footer-links:focus {
+  background-color: #31d0aa;
+}
+
+.footer-icon {
+  fill: #f4f4fd;
+}
+
+input::placeholder {
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 2;
+  letter-spacing: 0.04em;
+}
+
+.footer-btn {
+  min-width: 165px;
+  display: inline-flex;
+  padding: 8px 24px;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  color: #ffffff;
+  background-color: #4d5ae5;
+  letter-spacing: 0.64px;
+  border-radius: 4px;
+  border: none;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  margin: 0 auto;
+}
+
+.footer-btn:hover,
+.footer-btn:focus {
+  background-color: #404bbf;
+}
+
+.footer-icon {
+  fill: #f4f4fd;
+}
+.footer-icon-send {
+  fill: #ffffff;
+  margin-left: 16px;
+}
+
+/* ======================================== /footer mobile ========================================= */
+
 @media screen and (min-width: 320px) {
   .container {
     width: 320px;
     margin: 0 auto;
   }
+}
+/* --------------------------------- foter mobile max ---------------------------------------- */
+@media screen and (max-width: 767px) {
+  .footer-text {
+    line-height: 1.5;
+    letter-spacing: 0.32px;
+    color: #f4f4fd;
+    background-color: #2e2f42;
+    max-width: 288px;
+    text-align: start;
+    margin-bottom: 72px;
+  }
+
+  .footer-info {
+    text-align: center;
+  }
+
+  .footer-subtitle {
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.32px;
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 16px;
+  }
+  .footer-form-sub {
+    border: 1px solid #ffffff;
+    border-radius: 4px;
+    padding: 8px 0;
+    padding-left: 16px;
+    background-color: transparent;
+    color: #ffffff;
+    width: 288px;
+    height: 40px;
+    outline: none;
+    font-size: 12px;
+    letter-spacing: 0.04em;
+    line-height: 1.5;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    margin-bottom: 16px;
+  }
+
+  .footer-subscribe {
+    text-align: center;
+  }
+  .footer-social-links {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    margin-bottom: 72px;
+  }
+  /* --------------------------------- /foter mobile max---------------------------------------- */
 }
 
 @media screen and (min-width: 768px) {
@@ -357,7 +505,64 @@ input {
   }
 
   /* ======================================== /portfolio tablet ========================================= */
+
+  /* ======================================== footer tablet ========================================= */
+
+  .footer-subtitle {
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.32px;
+    color: #ffffff;
+    margin-bottom: 16px;
+  }
+
+  .footer-form-sub {
+    border: 1px solid #ffffff;
+    border-radius: 4px;
+    padding: 8px 0;
+    padding-left: 16px;
+    background-color: transparent;
+    color: #ffffff;
+    width: 264px;
+    height: 40px;
+    outline: none;
+    font-size: 12px;
+    letter-spacing: 0.04em;
+    line-height: 1.5;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    margin-right: 24px;
+  }
+
+  .footer-subscribe {
+    display: flex;
+  }
+  .footer-social-links {
+    display: flex;
+    gap: 16px;
+  }
+  
+  /* ======================================== /footer tablet ========================================= */
 }
+/* ---------------------------------- foter min-max tablet----------------------------------- */
+@media screen and (min-width: 768px) and (max-width: 1157px) {
+  .footer-item {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 24px;
+    row-gap: 72px;
+    padding-left: 108px;
+  }
+  .footer-text {
+    line-height: 1.5;
+    letter-spacing: 0.32px;
+    color: #f4f4fd;
+    background-color: #2e2f42;
+    max-width: 264px;
+    text-align: start;
+  }
+}
+/* ---------------------------------- /foter min-max tablet----------------------------------- */
 
 @media screen and (min-width: 1158px) {
   .container {
@@ -527,4 +732,130 @@ input {
     padding: 120px 0;
   }
   /* ======================================== portfolio desktop ========================================= */
+  /* ======================================== footer desktop ========================================= */
+
+  .footer {
+    background-color: #2e2f42;
+    padding: 100px 0;
+  }
+
+  .footer-logo {
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    color: #4d5ae5;
+    line-height: 1.17;
+    text-decoration: none;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    margin-right: 76px;
+    margin-bottom: 16px;
+  }
+
+  .footer-logo-span {
+    font-family: 'Raleway', sans-serif;
+    color: #f4f4fd;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.7;
+    text-decoration: none;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+  }
+  .link-footer {
+    display: inline-block;
+  }
+
+  .footer-text {
+    line-height: 1.5;
+    letter-spacing: 0.32px;
+    color: #f4f4fd;
+    background-color: #2e2f42;
+    max-width: 264px;
+    margin-right: 120px;
+  }
+
+  .footer-item {
+    display: flex;
+    align-items: baseline;
+  }
+
+  .footer-social-links {
+    display: flex;
+    gap: 16px;
+    margin-right: 80px;
+  }
+  .footer-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #4d5ae5;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .footer-links:hover,
+  .footer-links:focus {
+    background-color: #31d0aa;
+  }
+
+  .footer-icon {
+    fill: #f4f4fd;
+  }
+  .footer-icon-send {
+    fill: #ffffff;
+    margin-left: 16px;
+  }
+
+  .subscribe {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footer-form-sub {
+    border: 1px solid #ffffff;
+    border-radius: 4px;
+    padding: 8px 0;
+    padding-left: 16px;
+    background-color: transparent;
+    color: #ffffff;
+    width: 264px;
+    height: 40px;
+    outline: none;
+    font-size: 12px;
+    letter-spacing: 0.04em;
+    line-height: 1.5;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  }
+
+  input::placeholder {
+    color: #ffffff;
+  }
+
+  .footer-btn {
+    min-width: 165px;
+    display: inline-flex;
+    padding: 8px 24px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    color: #ffffff;
+    background-color: #4d5ae5;
+    letter-spacing: 0.64px;
+    border-radius: 4px;
+    border: none;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .footer-btn:hover,
+  .footer-btn:focus {
+    background-color: #404bbf;
+  }
+  /* ======================================== /footer desktop ========================================= */
 }
