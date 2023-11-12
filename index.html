@@ -16,7 +16,8 @@
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-    <!-- <header class="main-header">
+    <!------------------------------------------------------------------header -->
+    <header class="main-header">
       <div class="container header-wr">
         <nav class="nav-wr">
           <a class="header-logo" href="./index.html"
@@ -34,8 +35,8 @@
             </li>
           </ul>
         </nav>
-        <button class="burger-menu" type="button">
-          <svg width="24" height="24">
+        <button class="burger-menu-open" type="button">
+          <svg class="burge-menu-icon" width="24" height="24">
             <use href="./images/icons.svg#icon-burger"></use>
           </svg>
         </button>
@@ -54,16 +55,16 @@
           </ul>
         </address>
       </div>
-    </header> -->
+    </header>
     <main>
-      <!-- Section Hero 1 section -->
+      <!------------------------------------------------------------------Section Hero 1 section -->
       <section class="hero back-img">
         <div class="container">
           <h1 class="hero-main-title">Effective Solutions for Your Business</h1>
           <button class="hero-button" type="button">Order Service</button>
         </div>
       </section>
-      <!-- Section Advantages 2 section   -->
+      <!-----------------------------------------------------------Section Advantages 2 section   -->
       <section class="advantages">
         <div class="container">
           <h2 class="advantages-title visually-hidden">Advantages</h2>
@@ -129,7 +130,7 @@
           </ul>
         </div>
       </section>
-      <!-- Section Team 3 section -->
+      <!-------------------------------------------------------------------Section Team 3 section -->
       <section class="team">
         <div class="container">
           <h2 class="team-title">Our Team</h2>
@@ -546,7 +547,7 @@
       </div>
     </footer>
     <!------------------------------------------------------------------------ Section overlay -->
-    <!-- <div class="overlay-backdrop">
+    <div class="overlay-backdrop">
       <div class="form-modal">
         <button class="close" type="button">
           <svg class="close-btn" width="8" height="8">
@@ -606,18 +607,84 @@
               value="true"
               id="user-privacy"
             />
-            <label class="name-checkbox" for="user-privacy"
-              ><span class="icon-checkbox">
+            <label class="name-checkbox" for="user-privacy">
+              <span class="icon-checkbox">
                 <svg class="icon-v" width="10" height="8">
                   <use href="./images/icons.svg#icon-VectorV"></use>
-                </svg> </span
-              >I accept the terms and conditions of the
-              <a class="link link-policy" href="">Privacy Policy</a>
+                </svg>
+              </span>
+              <span class="check-box">
+                <span>
+                  <p class="text-checkbox">
+                    I accept the terms and conditions of the
+                  </p>
+                </span>
+                <a class="link link-policy" href="">Privacy Policy</a>
+              </span>
             </label>
           </div>
           <button class="send-form" type="button">Send</button>
         </form>
       </div>
-    </div> -->
+    </div>
+    <!---------------------------------------------------------overlay burger -->
+    <div class="modal-burger">
+      <div class="container mob-container-burger">
+        <button class="close-burger" type="button">
+          <svg class="close-btn-burger" width="8" height="8">
+            <use href="./images/icons.svg#icon-VectorX"></use>
+          </svg>
+        </button>
+        <ul class="burger-list">
+          <li class="burger-list-item">
+            <a class="burger-nav link" href="">Studio</a>
+          </li>
+          <li class="burger-list-item">
+            <a class="burger-nav link" href="">Portfolio</a>
+          </li>
+          <li class="burger-list-item">
+            <a class="burger-nav link" href="">Contacts</a>
+          </li>
+        </ul>
+        <ul class="burger-list-contacts">
+          <li class="burger-list-contacts-items">
+            <a class="burger-contacts link" href="">info@devstudio.com</a>
+          </li>
+          <li class="burger-list-contacts-items">
+            <a class="burger-contacts link" href="">+11 (000) 111-11-11</a>
+          </li>
+        </ul>
+        <ul class="burger-social-links">
+          <li class="burger-social-links-items">
+            <a href="" target="_blank" class="footer-links">
+              <svg class="footer-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-instagram-2"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="burger-social-links-items">
+            <a href="" target="_blank" class="footer-links">
+              <svg class="footer-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-twitter-1"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="burger-social-links-items">
+            <a href="" target="_blank" class="footer-links">
+              <svg class="footer-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-facebook-1"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="burger-social-links-items">
+            <a href="" target="_blank" class="footer-links">
+              <svg class="footer-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-linkedin-1"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
   </body>
 </html>
