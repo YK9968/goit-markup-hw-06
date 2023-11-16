@@ -35,7 +35,7 @@
             </li>
           </ul>
         </nav>
-        <button class="burger-menu-open" type="button">
+        <button class="burger-menu-open"  type="button">
           <svg class="burge-menu-icon" width="24" height="24">
             <use href="./images/icons.svg#icon-burger"></use>
           </svg>
@@ -61,7 +61,7 @@
       <section class="hero back-img">
         <div class="container">
           <h1 class="hero-main-title">Effective Solutions for Your Business</h1>
-          <button class="hero-button" type="button">Order Service</button>
+          <button class="hero-button" data-modal-open type="button">Order Service</button>
         </div>
       </section>
       <!-----------------------------------------------------------Section Advantages 2 section   -->
@@ -547,9 +547,9 @@
       </div>
     </footer>
     <!------------------------------------------------------------------------ Section overlay -->
-    <div class="overlay-backdrop ">
+    <div class="overlay-backdrop is-hidden" data-modal>
       <div class="form-modal">
-        <button class="close" type="button">
+        <button class="close" data-modal-close type="button">
           <svg class="close-btn" width="8" height="8">
             <use href="./images/icons.svg#icon-VectorX"></use>
           </svg>
@@ -630,7 +630,7 @@
     <!---------------------------------------------------------overlay burger -->
     <div class="modal-burger">
       <div class="container mob-container-burger is-open-burger">
-        <button class="close-burger" type="button">
+        <button class="close-burger"  type="button">
           <svg class="close-btn-burger" width="8" height="8">
             <use href="./images/icons.svg#icon-VectorX"></use>
           </svg>
@@ -686,5 +686,6 @@
         </ul>
       </div>
     </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
